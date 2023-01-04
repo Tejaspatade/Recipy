@@ -5,11 +5,12 @@
     "default": "index.html",
     "scripts": {
         "start": "parcel index.html",
-        "build": "parcel build index.html --dist-dir ./dist"
+        "build": "parcel build index.html --dist-dir ./dist --no-scope-hoist"
     },
     "author": "Tejas Patade",
     "license": "ISC",
     "devDependencies": {
+        "@parcel/transformer-sass": "^2.8.2",
         "parcel": "^2.0.0-beta.1",
         "sass": "^1.26.10"
     },
